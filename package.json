@@ -1,5 +1,5 @@
 {
-  "name": "one.com-validate-ip",
+  "name": "one.com-express-validate-ip",
   "version": "0.1.0",
   "description": "Validate the request IP against a whitelist",
   "main": "lib/expressValidateIp.js",
