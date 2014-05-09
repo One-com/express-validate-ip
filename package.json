@@ -1,0 +1,38 @@
+{
+  "name": "one.com-validate-ip",
+  "version": "0.1.0",
+  "description": "Validate the request IP against a whitelist",
+  "main": "lib/expressValidateIp.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git.one.com:/git/node-one.com-express-validate-ip.git"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "ip",
+    "access",
+    "control",
+    "validation"
+  ],
+  "author": "Andreas Lind Petersen <andreas@one.com>",
+  "publishConfig": {
+    "registry": "http://npm.one.com/"
+  },
+  "devDependencies": {
+    "express": "=3.0.6",
+    "mocha": "=1.18.2",
+    "unexpected": "=3.1.6",
+    "unexpected-express": "=0.4.2"
+  },
+  "dependencies": {
+    "httperrors": "=0.4.1",
+    "ip": "=0.3.0"
+  }
+}
