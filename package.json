@@ -1,5 +1,5 @@
 {
-  "name": "one.com-express-validate-ip",
+  "name": "@one.com/express-validate-ip",
   "version": "0.1.2",
   "description": "Validate the request IP against a whitelist",
   "main": "lib/expressValidateIp.js",
@@ -22,9 +22,6 @@
     "validation"
   ],
   "author": "Andreas Lind Petersen <andreas@one.com>",
-  "publishConfig": {
-    "registry": "http://npm.one.com/"
-  },
   "devDependencies": {
     "express": "=3.0.6",
     "mocha": "=1.18.2",
