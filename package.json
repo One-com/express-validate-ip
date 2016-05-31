@@ -23,7 +23,7 @@
   ],
   "author": "Andreas Lind Petersen <andreas@one.com>",
   "devDependencies": {
-    "express": "=3.0.6",
+    "express": "^4.13.4",
     "mocha": "2.5.3",
     "unexpected": "10.13.3",
     "unexpected-express": "8.2.0"
