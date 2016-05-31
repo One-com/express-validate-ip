@@ -30,6 +30,6 @@
   },
   "dependencies": {
     "httperrors": "2.1.0",
-    "ip": "=0.3.0"
+    "ip": "1.1.3"
   }
 }
