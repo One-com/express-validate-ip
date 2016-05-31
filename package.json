@@ -24,6 +24,7 @@
   "author": "Andreas Lind Petersen <andreas@one.com>",
   "devDependencies": {
     "express": "=3.0.6",
+    "lodash": "^4.13.1",
     "mocha": "=1.18.2",
     "unexpected": "=3.1.6",
     "unexpected-express": "=0.4.2"

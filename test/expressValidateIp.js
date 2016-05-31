@@ -4,7 +4,7 @@ process.env.NODE_ENV = 'test'; // Silence Connect's built-in error handler that 
 
 var unexpected = require('unexpected'),
     os = require('os'),
-    _ = require('underscore'),
+    _ = require('lodash'),
     express = require('express'),
     expressValidateIp = require('../lib/expressValidateIp');
 
