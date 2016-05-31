@@ -1,5 +1,5 @@
 {
-  "name": "@one.com/express-validate-ip",
+  "name": "express-validate-ip",
   "version": "0.1.2",
   "description": "Validate the request IP against a whitelist",
   "main": "lib/expressValidateIp.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git.one.com:/git/node-one.com-express-validate-ip.git"
+    "url": "git+https://github.com/One-com/express-validate-ip.git"
   },
   "keywords": [
     "express",
