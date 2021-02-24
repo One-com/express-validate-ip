@@ -55,4 +55,8 @@ describe('IpWhitelist', function () {
             return expect(nonWhitelistedIp, 'not to be allowed access according to', allowedIpsInProduction);
         });
     });
+
+    it('should allow an IPv6-mapped ip when allowedIps contains it in IPv4 form', function () {
+        return expect('::ffff:99.88.77.66', 'to be allowed access according to', ['99.88.77.66']);
+    });
 });
