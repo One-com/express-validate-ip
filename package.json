@@ -29,7 +29,7 @@
     "unexpected-express": "8.2.0"
   },
   "dependencies": {
-    "httperrors": "2.1.0",
+    "httperrors": "^2.1.0",
     "ip": "^1.1.5"
   }
 }
