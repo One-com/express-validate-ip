@@ -8,15 +8,13 @@ var unexpected = require('unexpected'),
     expressValidateIp = require('../lib/expressValidateIp');
 
 describe('expressValidateIp middleware', function () {
-    var allowedIps;
-
     var expect = unexpected.clone()
         // Create a custom assertion that mounts the redirectionRules middleware in an Express server and delegates to 'to be middleware that processes'
         .use(require('unexpected-express'))
         .addAssertion('[not] to be allowed access according to', function (expect, subject, value) {
             expect.errorMode = 'bubble';
             return expect(
-                express().set('trust proxy', true).use(expressValidateIp({allowedIps: value})),
+                express().set('trust proxy', true).use(expressValidateIp(value)),
                 'to yield exchange',
                 {
                     request: {
@@ -30,11 +28,11 @@ describe('expressValidateIp middleware', function () {
 
     it('should throw an exception if passed an invalid allowedIps string', function () {
         expect(function () {
-            expressValidateIp({allowedIps: 'foobar'});
+            expressValidateIp('foobar');
         }, 'to throw exception', 'validateIp: Cannot parse foobar');
 
         expect(function () {
-            expressValidateIp({allowedIps: ['foobar']});
+            expressValidateIp(['foobar']);
         }, 'to throw exception', 'validateIp: Cannot parse foobar');
     });
 
