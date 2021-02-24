@@ -24,3 +24,7 @@ app.use(expressValidateIp(allowList));
 
 // ...
 ```
+
+## License
+
+MIT
