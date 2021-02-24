@@ -59,4 +59,8 @@ describe('IpWhitelist', function () {
     it('should allow an IPv6-mapped ip when allowedIps contains it in IPv4 form', function () {
         return expect('::ffff:99.88.77.66', 'to be allowed access according to', ['99.88.77.66']);
     });
+
+    it('should allow an IPv6-mapped ip when allowedIps contains it in IPv4 cidr', function () {
+        return expect('::ffff:99.88.77.66', 'to be allowed access according to', ['99.88.0.0/16']);
+    });
 });
