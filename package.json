@@ -1,6 +1,6 @@
 {
   "name": "express-validate-ip",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Validate the request IP against a whitelist",
   "main": "lib/expressValidateIp.js",
   "files": [
