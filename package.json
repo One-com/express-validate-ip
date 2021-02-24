@@ -21,7 +21,7 @@
     "control",
     "validation"
   ],
-  "author": "Andreas Lind Petersen <andreas@one.com>",
+  "author": "Gustav Nikolaj <gno@one.com>",
   "devDependencies": {
     "express": "^4.13.4",
     "mocha": "2.5.3",
